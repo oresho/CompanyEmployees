@@ -1,0 +1,48 @@
+2022-07-26 09:04:07.2199 INFO Company with id: 53a1237a-3ed3-4462-b9f0-5a7bb1056a33 doesn't exist in the database.
+2022-07-26 09:05:07.5830 INFO Company with id: 53a1237a-3ed3-4462-b9f0-5a7bb1056a33 doesn't exist in the database.
+2022-07-26 09:05:10.6659 INFO Company with id: 53a1237a-3ed3-4462-b9f0-5a7bb1056a33 doesn't exist in the database.
+2022-07-26 10:21:06.7075 INFO Company with id: 0ad5b971-ff51-414d-af01-34187e407557 doesn't exist in the database.
+2022-07-26 10:29:59.9909 INFO Company with id: e9bae6da-dfce-4a7c-9922-efb35e40ddef doesn't exist in the database.
+2022-07-26 12:26:53.2785 ERROR Invalid model state for the EmployeeForCreationDto object
+2022-07-26 12:26:56.1047 ERROR Invalid model state for the EmployeeForCreationDto object
+2022-07-26 12:27:11.2377 ERROR Invalid model state for the EmployeeForCreationDto object
+2022-07-26 12:27:23.5800 ERROR Invalid model state for the EmployeeForCreationDto object
+2022-07-26 12:27:25.2997 ERROR Invalid model state for the EmployeeForCreationDto object
+2022-07-26 12:43:30.9317 ERROR Invalid model state for the EmployeeForUpdateDto object
+2022-07-26 12:43:42.5479 ERROR Invalid model state for the EmployeeForUpdateDto object
+2022-07-26 13:00:00.0663 ERROR Microsoft.AspNetCore.JsonPatch.Exceptions.JsonPatchException: The target location specified by path segment 'age11111111' was not found.
+   at Microsoft.AspNetCore.JsonPatch.Internal.ErrorReporter.<>c.<.cctor>b__1_0(JsonPatchError error)
+   at Microsoft.AspNetCore.JsonPatch.Adapters.ObjectAdapter.Remove(String path, Object objectToApplyTo, Operation operationToReport)
+   at Microsoft.AspNetCore.JsonPatch.Adapters.ObjectAdapter.Remove(Operation operation, Object objectToApplyTo)
+   at Microsoft.AspNetCore.JsonPatch.Operations.Operation`1.Apply(TModel objectToApplyTo, IObjectAdapter adapter)
+   at Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1.ApplyTo(TModel objectToApplyTo, IObjectAdapter adapter)
+   at Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1.ApplyTo(TModel objectToApplyTo)
+   at CompanyEmployees.Controllers.EmployeesController.PartiallyUpdateEmployeeForCompany(Guid companyId, Guid id, JsonPatchDocument`1 patchDoc) in /Users/oreoluwasomuyiwa/Projects/CompanyEmployees/CompanyEmployees/Controllers/EmployeesController.cs:line 176
+2022-07-26 13:01:34.7310 ERROR Microsoft.AspNetCore.JsonPatch.Exceptions.JsonPatchException: The target location specified by path segment 'age11111111' was not found.
+   at Microsoft.AspNetCore.JsonPatch.Internal.ErrorReporter.<>c.<.cctor>b__1_0(JsonPatchError error)
+   at Microsoft.AspNetCore.JsonPatch.Adapters.ObjectAdapter.Remove(String path, Object objectToApplyTo, Operation operationToReport)
+   at Microsoft.AspNetCore.JsonPatch.Adapters.ObjectAdapter.Remove(Operation operation, Object objectToApplyTo)
+   at Microsoft.AspNetCore.JsonPatch.Operations.Operation`1.Apply(TModel objectToApplyTo, IObjectAdapter adapter)
+   at Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1.ApplyTo(TModel objectToApplyTo, IObjectAdapter adapter)
+   at Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1.ApplyTo(TModel objectToApplyTo)
+   at CompanyEmployees.Controllers.EmployeesController.PartiallyUpdateEmployeeForCompany(Guid companyId, Guid id, JsonPatchDocument`1 patchDoc) in /Users/oreoluwasomuyiwa/Projects/CompanyEmployees/CompanyEmployees/Controllers/EmployeesController.cs:line 176
+2022-07-26 13:01:45.6935 ERROR Microsoft.AspNetCore.JsonPatch.Exceptions.JsonPatchException: The target location specified by path segment 'age11111111' was not found.
+   at Microsoft.AspNetCore.JsonPatch.Internal.ErrorReporter.<>c.<.cctor>b__1_0(JsonPatchError error)
+   at Microsoft.AspNetCore.JsonPatch.Adapters.ObjectAdapter.Remove(String path, Object objectToApplyTo, Operation operationToReport)
+   at Microsoft.AspNetCore.JsonPatch.Adapters.ObjectAdapter.Remove(Operation operation, Object objectToApplyTo)
+   at Microsoft.AspNetCore.JsonPatch.Operations.Operation`1.Apply(TModel objectToApplyTo, IObjectAdapter adapter)
+   at Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1.ApplyTo(TModel objectToApplyTo, IObjectAdapter adapter)
+   at Microsoft.AspNetCore.JsonPatch.JsonPatchDocument`1.ApplyTo(TModel objectToApplyTo)
+   at CompanyEmployees.Controllers.EmployeesController.PartiallyUpdateEmployeeForCompany(Guid companyId, Guid id, JsonPatchDocument`1 patchDoc) in /Users/oreoluwasomuyiwa/Projects/CompanyEmployees/CompanyEmployees/Controllers/EmployeesController.cs:line 176
+2022-07-26 13:04:13.4137 ERROR Invalid model state for the patch document
+2022-07-26 13:10:18.0541 ERROR Invalid model state for the patch document
+2022-07-26 13:10:30.7275 ERROR Invalid model state for the patch document
+2022-07-26 13:10:35.5338 ERROR Invalid model state for the patch document
+2022-07-26 13:10:36.6777 ERROR Invalid model state for the patch document
+2022-07-26 14:37:36.0847 ERROR Invalid model state for the patch document
+2022-07-26 14:38:28.1105 INFO Company with id: 1ffe773a-0380-4501-8068-2101b5d8886b doesn't exist in the database.
+2022-07-26 14:38:31.5095 INFO Employee with id: 80abbca8-664d-4b20-b5de-024705497d4a doesn't exist in the database.
+2022-07-26 15:23:00.9809 ERROR Invalid model state for the object. Controller: Companies, action: CreateCompany
+2022-07-26 15:23:55.4731 INFO Employee with id: e971b951-9318-4192-a32e-f59a3326ca38 doesn't exist in the database.
+2022-07-26 15:27:14.0744 ERROR Invalid model state for the object. Controller: Employees, action: CreateEmployeeForCompany
+2022-07-26 15:27:21.0857 ERROR Invalid model state for the object. Controller: Employees, action: CreateEmployeeForCompany

@@ -1,0 +1,10 @@
+2022-07-25 12:04:13.5658 INFO Here is info message from our values controller.
+2022-07-25 12:04:13.6130 DEBUG Here is debug message from our values controller.
+2022-07-25 12:04:13.6157 WARN Here is warn message from our values controller.
+2022-07-25 12:04:13.6166 ERROR Here is an error message from our values controller.
+2022-07-25 12:04:29.1769 INFO Here is info message from our values controller.
+2022-07-25 12:04:29.1806 DEBUG Here is debug message from our values controller.
+2022-07-25 12:04:29.1806 WARN Here is warn message from our values controller.
+2022-07-25 12:04:29.1825 ERROR Here is an error message from our values controller.
+2022-07-25 14:38:56.3233 INFO Company with id: 3d490a70-94ce-4d15-9494-5248280c2ce2 doesn't exist in the database.
+2022-07-25 15:43:40.6763 INFO Company with id: 3d490a70-94ce-4d15-9494-5248280c2ce2 doesn't exist in the database.
