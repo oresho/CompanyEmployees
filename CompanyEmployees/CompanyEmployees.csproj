@@ -25,11 +25,13 @@
     <None Remove="Microsoft.AspNetCore.JsonPatch" />
     <None Remove="Microsoft.AspNetCore.Mvc.NewtonsoftJson" />
     <None Remove="ActionFilters\" />
+    <None Remove="Utility\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Extensions\" />
     <Folder Include="ModelBinders\" />
     <Folder Include="ActionFilters\" />
+    <Folder Include="Utility\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LoggerService\LoggerService.csproj">

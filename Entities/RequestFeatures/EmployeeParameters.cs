@@ -6,6 +6,7 @@ namespace Entities.RequestFeatures
         const int maxPageSize = 50;
         public int PageNumber { get; set; } = 1;
         private int _pageSize = 10;
+        public string Fields { get; set; }
 
         public int PageSize
         {
@@ -22,8 +23,17 @@ namespace Entities.RequestFeatures
 
     public class EmployeeParameters : RequestParameters
     {
+        public EmployeeParameters()
+        {
+            OrderBy = "name";
+        }
+
         public uint MinAge { get; set; }
         public uint MaxAge { get; set; } = int.MaxValue;
+
         public bool ValidAgeRange => MaxAge > MinAge;
+
+        public string SearchTerm { get; set; }
+        public string OrderBy { get; set; }
     }
 }

@@ -6,12 +6,22 @@
 
   <ItemGroup>
     <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="Extensions\" />
+    <None Remove="System.Linq.Dynamic.Core" />
+    <None Remove="Extensions\Utilities\" />
+    <None Remove="DataShaping\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.2.19" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Contracts\Contracts.csproj" />
     <ProjectReference Include="..\Entities\Entities.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+    <Folder Include="Extensions\Utilities\" />
+    <Folder Include="DataShaping\" />
   </ItemGroup>
 </Project>

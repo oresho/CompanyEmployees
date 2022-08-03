@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 using AutoMapper;
 using CompanyEmployees.ActionFilters;
 using CompanyEmployees.Extensions;
+using CompanyEmployees.Utility;
 using Contracts;
+using Entities.DataTransferObjects;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -18,6 +20,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using NLog;
+using Repository.DataShaping;
 
 namespace CompanyEmployees
 {
@@ -41,6 +44,8 @@ namespace CompanyEmployees
             services.ConfigureSqlContext(Configuration);
             services.ConfigureRepositoryManager();
 
+            //services.AddCustomMediaTypes();
+
             services.AddAutoMapper(typeof(Startup));
 
             services.AddControllers(config => {
@@ -48,7 +53,8 @@ namespace CompanyEmployees
                 config.ReturnHttpNotAcceptable = true;
             }).AddNewtonsoftJson()
             .AddXmlDataContractSerializerFormatters()
-            .AddCustomCSVFormatter();
+            .AddCustomCSVFormatter()
+            .AddCustomMediaTypes();
 
             services.Configure<ApiBehaviorOptions>(options => {
                 options.SuppressModelStateInvalidFilter = true;
@@ -57,6 +63,12 @@ namespace CompanyEmployees
             services.AddScoped<ValidationFilterAttribute>();
             services.AddScoped<ValidateCompanyExistsAttribute>();
             services.AddScoped<ValidateEmployeeForCompanyExistsAttribute>();
+            services.AddScoped<ValidateMediaTypeAttribute>();
+
+
+            services.AddScoped<IDataShaper<EmployeeDto>, DataShaper<EmployeeDto>>();
+            services.AddScoped<EmployeeLinks>();
+
 
 
             services.AddSwaggerGen(c =>
